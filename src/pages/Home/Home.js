@@ -1,4 +1,9 @@
+import HomeLayout from "../../components/Layout/HomeLayout";
 function Home() {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <HomeLayout />
+    </div>
+  );
 }
 export default Home;

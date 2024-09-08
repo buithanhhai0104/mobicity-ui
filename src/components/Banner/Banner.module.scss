@@ -1,0 +1,31 @@
+.videoBtn {
+  display: flex;
+  gap: 10px;
+  span {
+    padding: 10px;
+    background-color: #0078d6;
+    color: var(--TextColor);
+    font-size: 20px;
+    z-index: 1001;
+    &:hover {
+      background-color: #005a9e;
+      color: #ccc;
+    }
+  }
+}
+.videoContent {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  h1 {
+    font-size: 50px;
+    color: var(--TextColor);
+  }
+  p {
+    font-size: 20px;
+    color: var(--TextColor);
+  }
+}
+.videoContainer {
+  position: relative;
+}

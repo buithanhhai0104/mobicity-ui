@@ -1,5 +1,6 @@
 import Header from "./Header";
 import React from "react";
+import NavPage from "./NavPage";
 
 function DefaultLayout({ children }) {
   return (

@@ -133,11 +133,12 @@
   flex-direction: column;
   margin-left: -100%;
   max-width: 30%;
-  min-height: 500px;
+  height: 400px;
   background-color: white;
   border-radius: 10px;
-  transition: margin-left 0.5s ease-in-out;
-  z-index: 1001;
+  transition: margin-left 0.3s ease-in-out;
+  z-index: 1002;
+  overflow: auto;
   h2 {
     display: flex;
     justify-content: center;

@@ -16,6 +16,5 @@ const publicRoutes = [
     component: Maybach,
   },
 ];
-const privateRoutes = [];
 
-export { privateRoutes, publicRoutes };
+export { publicRoutes };
