@@ -1,4 +1,10 @@
+import MaybachLayout from "../../components/Layout/MaybachLayout";
+
 function Maybach() {
-  return <div>Maybach Page</div>;
+  return (
+    <div>
+      <MaybachLayout />
+    </div>
+  );
 }
 export default Maybach;

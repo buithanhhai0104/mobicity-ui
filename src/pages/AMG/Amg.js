@@ -1,4 +1,10 @@
+import AmgLayout from "../../components/Layout/AmgLayout";
+
 function Amg() {
-  return <div>AMG Page</div>;
+  return (
+    <div>
+      <AmgLayout />
+    </div>
+  );
 }
 export default Amg;
