@@ -1,6 +1,7 @@
 import styles from "./Banner.module.scss";
 import clsx from "clsx";
 import { useRef, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 function Banner({ video, title, content }) {
   const videoRef = useRef(null);
   const [status, setStatus] = useState("pause");
@@ -38,17 +39,19 @@ function Banner({ video, title, content }) {
       <video ref={videoRef} width="100%" muted onEnded={handleVideoEnd}>
         <source src={video} type="video/mp4" />
       </video>
-      <div>
+      <span className={clsx(styles["banner-play"])}>
         <button onClick={handlePlay}>{status}</button>
-      </div>
+      </span>
       <div className={clsx(styles.videoContent)}>
         <h1>{title}</h1>
         <p>{content}</p>
         <div className={clsx(styles.videoBtn)}>
-          <span style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
-            Khám phá thêm
+          <span className={clsx(styles["videoBtn-item1"])}>
+            <Link>Khám phá thêm</Link>
           </span>
-          <span>Tìm xe có sẵn</span>
+          <span className={clsx(styles["videoBtn-item2"])}>
+            <Link>Tìm xe có sẵn</Link>
+          </span>
         </div>
       </div>
     </div>

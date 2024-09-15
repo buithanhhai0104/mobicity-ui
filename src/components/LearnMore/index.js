@@ -11,13 +11,7 @@ function LearnMore({ image, content, title, carSearch, colorAmg }) {
           <p>{content}</p>
           <h2 style={{ color: "white" }}>{title}</h2>
           <div className={clsx(styles.ContentLink)}>
-            <span
-              style={{
-                marginLeft: "20px",
-                padding: " 15px 25px",
-                backgroundColor: "#0078d6",
-              }}
-            >
+            <span className={clsx(styles["ContentLink-btn1"])}>
               Tìm hiểu thêm
             </span>
             <span>

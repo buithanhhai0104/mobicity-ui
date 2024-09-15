@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./../header.module.scss";
 import clsx from "clsx";
 import { useState } from "react";
 import MainNav from "../../MainNav";
+import useMediaQueries from "Hook/useMediaQueries";
+import { onMenuContext } from "components/Context/ProductImgContext";
 function NavBar() {
   const [navContent, setNavContent] = useState({});
   const [selected, setSelected] = useState(null);
+  const { isDesktop, isTablet, isMobile } = useMediaQueries();
+
   function handleVehicle() {
     if (selected === "vehicle") {
       setNavContent({});
@@ -93,7 +97,7 @@ function NavBar() {
     setSelected(null);
   }
   return (
-    <div>
+    <>
       <ul className={clsx(styles.navbar)}>
         <li onClick={handleVehicle}>
           <span>Các dòng xe </span>
@@ -111,11 +115,13 @@ function NavBar() {
           <span>Thế giới Mercedes-Benz</span>
         </li>
       </ul>
-      <MainNav navContent={navContent} />
+      <div className={clsx(styles["MainNav-container"])}>
+        <MainNav navContent={navContent} />
+      </div>
       {selected !== null && (
         <div onClick={handleOverlay} className={clsx(styles.overlayBody)}></div>
       )}
-    </div>
+    </>
   );
 }
 

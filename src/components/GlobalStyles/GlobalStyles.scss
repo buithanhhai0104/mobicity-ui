@@ -11,24 +11,146 @@ body {
 
 html {
 }
-.LearnContainer {
-  margin: auto;
-  width: 100%;
-  display: grid;
-  margin: 0px;
-  padding: 0px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  list-style: none;
-  li {
-    position: relative;
-    background-color: black;
+@media only screen and (max-width: 768px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .header_navbar__cZtJd {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 0;
+    display: none;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      &:hover {
+        background-color: #ececec;
+      }
+      padding: 20px 0px;
+      border-bottom: 1px solid #ccc;
+      span {
+        color: black;
+        &:hover {
+          color: rgb(127, 126, 126);
+        }
+      }
+    }
   }
-}
-.item1 {
-  grid-column: 1 / span 2;
-}
-.LearnTitle {
-  margin-top: 50px;
-  font-size: 40px;
+  .header_headerTop__AtDby {
+    border: 0px;
+    margin: 0px;
+  }
+  .header_logoName__OAyWf {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    margin: 0px;
+    z-index: 10000;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+    a {
+      display: none;
+    }
+  }
+  .header_MainNav-container__Cn6ib {
+    display: none;
+  }
+  .header_header__Esg3g {
+    position: relative;
+    height: 96px;
+  }
+  .header_headerInput__g-RdT {
+    width: 100%;
+    height: 96px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10001;
+  }
+  .header_policy__ctG8S a:first-of-type {
+    display: none;
+  }
+  .header_policy__ctG8S {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      svg {
+        font-size: 30px;
+      }
+    }
+  }
+  .header_headerSearch__x\+BLm {
+    margin-right: 80px;
+    a {
+      border: 0px;
+    }
+  }
+  .HomeLayout_LearnTitle__ZPtdP {
+    font-size: 30px;
+  }
+  .LearnMore_LearnContent__ovS1A h2 {
+    font-size: 30px;
+  }
+  .LearnMore_LearnContent__ovS1A span {
+    font-size: 14px;
+    a {
+      font-size: 14px;
+    }
+  }
+  .LearnMore_ContentLink-btn1__dE9F7 {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .Discover_titleContainer__8Bxux {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .HomeLayout_discover-item-content__Ikrp1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .introduce_introduce-content__TBqdZ {
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+    span {
+      a {
+        padding: 10px 25px;
+      }
+    }
+  }
+  .HomeLayout_home-list-container__oqXN2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .Discover_titleContainer__8Bxux {
+    width: 100%;
+  }
+  .Discover_Product__UmaVI {
+    img {
+      width: 200px;
+      height: 100px;
+      left: 135px;
+      bottom: 85px;
+    }
+  }
+  .NavPage_NavPage__jIF2o {
+    margin-top: -35px;
+  }
 }
