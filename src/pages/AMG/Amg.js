@@ -2,7 +2,7 @@ import AmgLayout from "../../components/Layout/AmgLayout";
 
 function Amg() {
   return (
-    <div>
+    <div style={{ backgroundColor: "black", padding: "10px" }}>
       <AmgLayout />
     </div>
   );

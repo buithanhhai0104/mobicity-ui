@@ -1,0 +1,32 @@
+.list-item {
+  display: flex;
+
+  box-sizing: border-box;
+  padding: 24px 16px;
+}
+.first-icon {
+  display: block;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  svg {
+    padding-right: 16px;
+    font-size: 24px;
+  }
+}
+.last-icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  svg {
+    font-size: 24px;
+    margin-left: -10px;
+    color: rgb(0, 120, 214);
+  }
+}
+.list-item--content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

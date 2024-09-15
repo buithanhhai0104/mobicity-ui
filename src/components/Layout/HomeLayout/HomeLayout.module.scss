@@ -23,3 +23,60 @@
   margin-top: 50px;
   font-size: 40px;
 }
+.discover-item-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 80px;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+.Discover-item--home {
+  background: linear-gradient(to bottom right, #e1e0e0, white);
+  p {
+    color: black;
+  }
+  span {
+    color: black;
+  }
+}
+.discover-item {
+  margin: 0 100px;
+}
+.home-service-container {
+  margin-left: 100px;
+  padding-bottom: 40px;
+  h2 {
+    font-size: 40px;
+  }
+}
+.home-introduce-container {
+  padding-top: 40px;
+  a {
+    background-color: #0078d6;
+    color: white;
+    &:hover {
+      background-color: #025391;
+    }
+  }
+}
+.home-list-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  gap: 20px;
+  margin: 0px;
+  padding: 0px;
+  li {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px 1px #cfcccc;
+    &:hover {
+      background-color: #e8e8e8;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.Discover-item--amg {
+  background-size: cover;
+  background-image: url(https://assets.oneweb.mercedes-benz.com/plugin/vmos-model-range-explorer/vmos-model-range-explorer-2.6.0/client/AMG-BG_small.png);
+  p {
+    color: white;
+  }
+  span {
+    color: #e8e8e8;
+  }
+}
+.container-discover-amg {
+  background-image: url(https://assets.oneweb.mercedes-benz.com/plugin/vmos-model-range-explorer/vmos-model-range-explorer-2.6.0/client/AMG-BG_small.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+.discover-item {
+  margin: 0 100px;
+}
+.DiscoverContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 80px;
+}
+.discover-item-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+.amg-service-container {
+  background-color: black;
+  margin-left: 100px;
+  padding-bottom: 40px;
+  h2 {
+    margin: 0px;
+    padding: 40px 0px;
+    color: white;
+    font-size: 40px;
+  }
+  h3 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  span {
+    color: white;
+  }
+  span {
+    background-color: red;
+    a {
+      color: white;
+      &:hover {
+        background-color: #5f5e5e;
+      }
+    }
+  }
+}
+.introduce1 {
+  background-color: black;
+  color: white;
+}
+.introduce2 {
+  background-color: black;
+  color: white;
+}
+.amg-introduce-container {
+  padding-top: 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  a {
+    background-color: red;
+    color: white;
+    &:hover {
+      background-color: #5f5e5e;
+    }
+  }
+}
+
+.LearnTitle {
+  margin-top: 50px;
+  font-size: 40px;
+  color: white;
+}
+
+.amg-list-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  gap: 20px;
+  margin: 0px;
+  padding: 0px;
+  li {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px 1px #cfcccc;
+    &:hover {
+      background-color: #393838;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

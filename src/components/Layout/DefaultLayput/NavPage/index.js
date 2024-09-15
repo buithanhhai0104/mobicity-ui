@@ -8,23 +8,25 @@ import styles from "./NavPage.module.scss";
 
 function NavPage({ activeColor }) {
   return (
-    <ul className={clsx(styles.pagelink)}>
-      <li style={{ backgroundColor: activeColor === "glc" || "white" }}>
-        <Link to="/">
-          <img src={MerSrc} />
-        </Link>
-      </li>
-      <li style={{ backgroundColor: activeColor === "amg" || "white" }}>
-        <Link to="/amg">
-          <img src={AmgSrc} />
-        </Link>
-      </li>
-      <li style={{ backgroundColor: activeColor === "maybach" || "white" }}>
-        <Link to="/maybach">
-          <img src={MaybachSrc} />
-        </Link>
-      </li>
-    </ul>
+    <nav className={clsx(styles.NavPage)}>
+      <ul className={clsx(styles.pagelink)}>
+        <li style={{ backgroundColor: activeColor === "glc" || "white" }}>
+          <Link to="/">
+            <img src={MerSrc} />
+          </Link>
+        </li>
+        <li style={{ backgroundColor: activeColor === "amg" || "white" }}>
+          <Link to="/amg">
+            <img src={AmgSrc} />
+          </Link>
+        </li>
+        <li style={{ backgroundColor: activeColor === "maybach" || "white" }}>
+          <Link to="/maybach">
+            <img src={MaybachSrc} />
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

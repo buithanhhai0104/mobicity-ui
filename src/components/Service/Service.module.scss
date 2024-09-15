@@ -1,0 +1,49 @@
+.service-container {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.service-croll {
+  width: 190%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  a {
+    width: 100%;
+    img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  span {
+    display: inline-flex;
+
+    a {
+      padding: 11px 23px;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        background-color: #e8e8e8;
+      }
+    }
+  }
+}
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 35%;
+  left: 95%;
+  transition: all 0.8s;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-size: 25px;
+  border: 0px;
+  box-shadow: 0 0 1px 1px rgb(56, 150, 251);
+}
