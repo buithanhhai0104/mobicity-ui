@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { VscSearch } from "react-icons/vsc";
-import styles from "../../header.module.scss";
+import styles from "../header.module.scss";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 import useMediaQueries from "Hook/useMediaQueries";
@@ -11,6 +11,7 @@ function InputSearch() {
   const [overlay, setOverlay] = useState(false);
   const [hiddenInput, setHiddenInput] = useState(false);
   const { isTablet } = useMediaQueries();
+
   let timeoutId = useRef(null);
   function handleInputFocus() {
     setLength("600px");
